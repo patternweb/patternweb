@@ -4,7 +4,7 @@
   "scripts": {
     "build": "lerna run build",
     "test": "lerna run test",
-    "deploy": "lerna run publish"
+    "deploy": "lerna publish"
   },
   "repository": "https://github.com/patternweb/patternweb",
   "author": "John Rees <john@bitsushi.com>",
