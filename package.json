@@ -2,10 +2,11 @@
   "name": "patternweb",
   "version": "0.0.1",
   "scripts": {
-    "build": "lerna run build",
+    "clean": "rimraf patterns/*/dist",
+    "build": "yarn clean && lerna run build",
     "prepublish": "yarn build",
     "test": "jest",
-    "deploy": "lerna publish"
+    "deploy": "yarn test && yarn prepublish && lerna publish --access public"
   },
   "repository": "https://github.com/patternweb/patternweb",
   "author": "John Rees <john@bitsushi.com>",
