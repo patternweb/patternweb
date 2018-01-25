@@ -1,12 +1,12 @@
 {
-  "name": "px",
+  "name": "patternweb",
   "version": "0.0.1",
   "scripts": {
     "build": "lerna run build",
     "test": "lerna run test",
     "deploy": "lerna run publish"
   },
-  "keywords": [],
+  "repository": "https://github.com/patternweb/patternweb",
   "author": "John Rees <john@bitsushi.com>",
   "license": "MPL-2.0",
   "private": true,

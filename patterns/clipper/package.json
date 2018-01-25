@@ -1,7 +1,10 @@
 {
-  "name": "clipper",
+  "name": "@patternweb/clipper",
+  "description": "Patterns for JSClipper",
+  "author": "John Rees",
+  "repository": "https://github.com/patternweb/patternweb/tree/master/patterns/clipper",
+  "license": "MPL-2.0",
   "version": "0.0.1",
-  "description": "",
   "source": "src/index.ts",
   "main": "dist/index.js",
   "module": "dist/index.m.js",
@@ -10,9 +13,10 @@
   "scripts": {
     "build": "rimraf dist && tsc"
   },
-  "author": "John Rees",
-  "license": "MPL-2.0",
   "dependencies": {
     "clipper-fpoint": "^6.4.22"
+  },
+  "publishConfig": {
+    "access": "public"
   }
 }
