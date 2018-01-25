@@ -3,7 +3,8 @@
   "version": "0.0.1",
   "scripts": {
     "build": "lerna run build",
-    "test": "lerna run test",
+    "prepublish": "yarn build",
+    "test": "jest",
     "deploy": "lerna publish"
   },
   "repository": "https://github.com/patternweb/patternweb",
@@ -14,11 +15,26 @@
     "patterns/*"
   ],
   "devDependencies": {
+    "@types/jest": "^22.1.0",
+    "@types/node": "^9.3.0",
+    "jest": "^22.1.4",
     "lerna": "^2.8.0",
     "rimraf": "^2.6.2",
+    "ts-jest": "^22.0.1",
     "typescript": "^2.6.2"
   },
   "publishConfig": {
     "access": "public"
+  },
+  "jest": {
+    "transform": {
+      "^.+\\.tsx?$": "<rootDir>/node_modules/ts-jest/preprocessor.js"
+    },
+    "testRegex": "(/__tests__/.*|(\\.|/)(test|spec))\\.(jsx?|tsx?)$",
+    "moduleFileExtensions": [
+      "ts",
+      "js",
+      "json"
+    ]
   }
 }
