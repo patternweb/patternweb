@@ -17,5 +17,8 @@
     "lerna": "^2.8.0",
     "rimraf": "^2.6.2",
     "typescript": "^2.6.2"
+  },
+  "publishConfig": {
+    "access": "public"
   }
 }
