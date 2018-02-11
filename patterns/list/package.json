@@ -3,7 +3,7 @@
   "author": "John Rees",
   "repository": "https://github.com/patternweb/patternweb/tree/master/patterns/list",
   "license": "MPL-2.0",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "source": "src/index.ts",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
